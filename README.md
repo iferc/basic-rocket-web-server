@@ -2,7 +2,7 @@
 
 This application was made part of an introductory video for Rust. The video included an overview of some Rust syntax, along with the implementation of this simple To Do REST API.
 
-The video can be scene on [YouTube](https://youtu.be/8RA6LSjXvRk)
+The video can be seen on [YouTube](https://youtu.be/8RA6LSjXvRk)
 
 ## Installing Rust
 
