@@ -1,0 +1,14 @@
+[package]
+name = "basic-rocket-web-server"
+version = "0.1.0"
+authors = ["iferc <github@iferc.ca>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.6"
+rocket_contrib = { version = "0.4.6", features = ["json"] }
+rusqlite = { version = "0.24.1", features = ["bundled"] }
+serde = { version = "1.0.117", features = ["derive"] }
+serde_json = "1.0.59"
