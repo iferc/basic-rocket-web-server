@@ -104,7 +104,7 @@ fn remove_todo_item(id: i64) -> Result<Json<StatusMessage>, String> {
         Ok(rows_affected) => Ok(Json(StatusMessage {
             message: format!("{} rows deleted!", rows_affected),
         })),
-        Err(_) => Err("Failed to insert todo item".into()),
+        Err(_) => Err("Failed to delete todo item".into()),
     }
 }
 
