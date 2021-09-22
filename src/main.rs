@@ -1,7 +1,6 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 
-#[macro_use]
-extern crate rocket;
+use rocket::*;
 use rocket_contrib::json::Json;
 use rusqlite::Connection;
 use serde::Serialize;

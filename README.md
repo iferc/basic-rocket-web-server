@@ -9,10 +9,9 @@ The video can be seen on [YouTube](https://youtu.be/8RA6LSjXvRk)
 The easiest way to install Rust is by using `rustup`, a Rust version manager.
 Follow the instructions on the [rustup](https://rustup.rs/) site for your operating system.
 
-By default, `rustup` will install the latest stable verison of Rust. Rocket currently
-requires a nightly version of Rust. When you're in the directory
-containing this repository's code, `rustup` will look in the `rust-toolchain` file and
-automatically install and use the correct Rust version for you. Test this out with:
+By default, `rustup` will install the latest stable verison of Rust. Rocket currently requires a nightly version of Rust. Recent nightly versions have a compatibility issue with the version of Rocket used in this project, so it is necessary to pin to a known good nightly version like `nightly-2021-04-13`.
+
+When you're in the directory containing this repository's code, `rustup` will look in the `rust-toolchain` file and automatically install and use the correct Rust version for you. Test this out with:
 
 ```sh
 $ rustc --version
@@ -21,7 +20,7 @@ $ rustc --version
 If that does not work for any reason, you can set the directory to use nightly by running the follow:
 
 ```sh
-$ rustup override set nightly
+$ rustup override set nightly-2021-04-13
 ```
 
 ## Useful toolchain extentions
